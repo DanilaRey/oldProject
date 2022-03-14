@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+main{
+    background: #f2f2f2;
+    height: 100vh;
+}
+                                        /*Панель навигации*/
+div.panel_nav{
+    position: absolute;
+    display: flex;
+    width: 240px;
+    min-width: 240px;
+    height: 100%;
+    background: #f8f8f8;
+    flex-direction: column;
+    align-items: center;
+}
+img.logo{
+    height: 40px;
+    width: 170px;
+    margin-top: 40px;
+
+}
+ul.navigation{
+    list-style-type: none;
+    padding: 0;
+}
+ul.navigation li{
+    margin: 10px 0;
+    font-size: 15px;
+}
+ul.navigation li.first_li{
+    padding: 20px 0;
+    color: #0070E0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+a.link_nav{
+    text-decoration: none;
+    color: #000000;
+}
+a.link_nav:hover{
+    color: #0070E0;
+    cursor: pointer;
+}
+                                /*Центральное содержание контента*/
+div.main_container{
+    top: 0;
+    bottom: 0;
+    padding-left: 240px;
+    height: 100vh;
+}
+div.top_panel{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+div.search{
+    display: flex;
+    justify-content: center;
+    margin-right: 45px;
+}
+div.search form{
+    position: relative;
+    margin-top: 20px;
+}
+div.search form input{
+    padding: 10px;
+    width: 335px;
+    transition: 0.5s;
+    background: #eeeeee;
+    border-radius: 5px;
+    border: 2px solid #c6c6c6;
+    outline: none;
+}
+div.search form input:hover{
+    border: 2px solid #ffffff;
+    background: #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+div.ico_message{
+    display: flex;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+img.message{
+    height: 20px;
+    width: 22px;
+}
+div.ico_user{
+    display: flex;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+img.user{
+    height: 30px;
+    width: 30px;
+}
+img.message:hover{
+    cursor: pointer;
+}
+img.user:hover{
+    cursor: pointer;
+}
+                                /*Контейнер с файлами*/
+div.main_content{
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 25%);
+    padding: 32px 58px 0 50px;
+
+}
+div.middle_content{
+    height: 520px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.07);
+    padding: 32px;
+    width: 70%;
+}
+span.name_file{
+    font-size: 15px;
+    margin-bottom: 60px;
+    height: 50px;
+    color: black;
+}
+div.title_head{
+    margin-left: 10px;
+}
+h1.title_middle_content{
+    font-size: 24px;
+}
+
+table.table_middle_content{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    border-collapse: collapse;
+}
+
+table td{
+    padding-bottom: 15px;
+    color: #999999;
+}
+td.file{
+    padding-right: 340px;
+}
+td.info_file{
+    padding-right: 30px;
+}
+td.file span:hover{
+    color: #0070E0;
+}
+table td:hover{
+    cursor: pointer;
+    color: #0070E0;
+}
+
+
+                             /*Панель добавления файлов*/
+div.create_panel{
+    display: flex;
+    flex-direction: column;
+    /*height: 564px;*/
+    height: 200px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.07);
+    width: 20%;
+    margin-left: 20px;
+    padding: 10px;
+}
+span.create_file{
+    background: rgb(0, 93, 214);
+    color: #ffffff;
+    padding: 6px 20px;
+    border-radius: 4px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+span.create_file:hover{
+    cursor: pointer;
+}
+ul.add_panel_files{
+    list-style-type: none;
+    padding: 0 0 0 10px;
+    font-size: 15px;
+}
+ul.add_panel_files li{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #0061ff;
+}
+img.add_icon{
+    height: 20px;
+    width: 20px;
+    padding-right: 7px;
+}
+img.add_icon:hover{
+    cursor: pointer;
+}
+ul.add_panel_files li:hover{
+    cursor: pointer;
+}

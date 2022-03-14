@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Авторизация-Redan</title>
+</head>
+<body>
+<main>
+    <div class="container_login">
+        <div class="wrap_login">
+            <form action="php/auth.php" class="login_form" method="post">
+                <span class="login_form_title">Авторизация</span>
+                <span class="login_form_icon">
+                    <img src="res/favicon.ico">
+                </span>
+                <div class="validate_input">
+                    <input type="text"  class="input100" placeholder="Логин" name="login">
+                    <!--<span>Логин</span>-->
+                </div>
+                <div class="validate_input">
+                    <input type="password" class="input100" placeholder="Пароль" name="password">
+                    <!--<span>Пароль</span>-->
+                </div>
+                <div class="container_form_btn">
+                    <input type="submit" value="Войти" class="input_btn">
+                </div>
+                <div class="text_center">
+                    <span class="text_1">
+                        © 2019 Redan
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

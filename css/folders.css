@@ -1,0 +1,237 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+main{
+    background: #f2f2f2;
+    height: 100vh;
+}
+/*Панель навигации*/
+div.panel_nav{
+    position: absolute;
+    display: flex;
+    width: 240px;
+    min-width: 240px;
+    height: 100%;
+    background: #f8f8f8;
+    flex-direction: column;
+    align-items: center;
+}
+img.logo{
+    height: 40px;
+    width: 170px;
+    margin-top: 40px;
+
+}
+ul.navigation{
+    list-style-type: none;
+    padding: 0;
+}
+ul.navigation li{
+    margin: 10px 0;
+    font-size: 15px;
+}
+ul.navigation li.first_li{
+    padding: 20px 0;
+    color: #0070E0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+a.link_nav{
+    text-decoration: none;
+    color: #000000;
+}
+a.link_nav:hover{
+    color: #0070E0;
+    cursor: pointer;
+}
+/*Центральное содержание контента*/
+div.main_container{
+    top: 0;
+    bottom: 0;
+    padding-left: 240px;
+    height: 100vh;
+}
+div.top_panel{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 59px;
+}
+div.search{
+    margin-right: 45px;
+}
+div.search form{
+    position: relative;
+    margin-top: 20px;
+}
+div.search form input{
+    padding: 10px;
+    width: 335px;
+    transition: 0.5s;
+    background: #eeeeee;
+    border-radius: 5px;
+    border: 2px solid #c6c6c6;
+    outline: none;
+}
+div.search form input:hover{
+    border: 2px solid #ffffff;
+    background: #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+div.ico_message{
+    display: flex;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+img.message{
+    height: 20px;
+    width: 22px;
+}
+div.ico_user{
+    display: flex;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+img.user{
+    height: 30px;
+    width: 30px;
+}
+img.message:hover{
+    cursor: pointer;
+}
+img.user:hover{
+    cursor: pointer;
+}
+span.title_delete{
+    text-align: center;
+    margin-right: 500px;
+    margin-top: 21px;
+    font-weight: normal;
+    font-size: 20px;
+}
+                        /*Контейнер с файлами*/
+div.main_content{
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 25%);
+    padding: 32px 58px 0 50px;
+    justify-content: center;
+
+}
+div.middle_content{
+    display: flex;
+    /*justify-content: flex-start;*/
+    /*align-items: flex-start;*/
+    flex-direction: column;
+    height: 520px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.07);
+    padding: 32px;
+    width: 70%;
+}
+
+div.title_head{
+    padding-bottom: 5px;
+    /*border-bottom: 1px solid #999999;*/
+}
+span.title_middle_content{
+    font-size: 15px;
+    margin-left: 40px;
+}
+span.title_middle_content_right{
+    font-size: 15px;
+    margin-left: 525px;
+}
+
+ul.add_folder{
+    list-style-type: none;
+margin: 0;
+}
+ul.add_folder li{
+    height: 56px;
+    list-style: none;
+    border-top: 1px solid #E6E8EB;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 800px;
+
+}
+ul.add_folder li span{
+    border-top: 1px solid #999999;
+    width: 100px;
+}
+div.table_container{
+    width: 100px;
+}
+
+
+
+                        /*Панель добавления файлов*/
+div.create_panel{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.07);
+    width: 20%;
+    margin-left: 20px;
+    padding: 10px;
+}
+span.create_file{
+    background: rgb(0, 93, 214);
+    color: #ffffff;
+    padding: 6px 20px;
+    border-radius: 4px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+span.create_file:hover{
+    cursor: pointer;
+}
+ul.add_panel_files{
+    list-style-type: none;
+    padding: 0 0 0 10px;
+    font-size: 15px;
+}
+ul.add_panel_files li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #0061ff;
+}
+img.add_icon{
+    height: 20px;
+    width: 20px;
+    padding-right: 7px;
+}
+img.add_icon:hover{
+    cursor: pointer;
+}
+ul.add_panel_files li:hover{
+    cursor: pointer;
+}
+input.del_input{
+    padding: 4px;
+    margin-top: 10px;
+}

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/delete_page.css">
+    <title>Document</title>
+</head>
+<body>
+<main>
+
+    <div class="panel_nav">
+        <img src="res/logo.png" alt="" class="logo">
+        <ul class="navigation">
+            <li class="first_li">Файлы</li>
+            <li><a href="home.html" class="link_nav">Мои файлы</a></li>
+            <li><a href="folders.html" class="link_nav">Общий доступ</a></li>
+            <li><a href="deleted_files.html" class="link_nav">Удаленные файлы</a></li>
+        </ul>
+    </div>
+
+    <div class="main_container">
+        <div class="top_panel">
+            <span class="title_delete">Удаленные файлы</span>
+            <div class="search">
+                <form action="">
+                    <input type="text" placeholder="Поиск">
+                </form>
+            </div>
+            <div class="ico_message">
+                <img src="res/ico.png" alt="" class="message">
+            </div>
+            <div class="ico_user">
+                <img src="res/icon_user.png" alt="" class="user">
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="middle_content">
+                <div class="title_head">
+                    <span class="title_middle_content">Имя</span>
+                    <span class="title_middle_content_right">Удален</span>
+                </div>
+                <div class="table_container">
+                    <table class="table_middle_content">
+                        <tr>
+                            <td class="file">Get Started.url</td>
+                            <td class="info_file">26.05.2019</td>
+
+                        </tr>
+                        <tr>
+                            <td class="file">Get Started.url</td>
+                            <td class="info_file">14.05.2019</td>
+                        </tr>
+                        <tr>
+                            <td class="file">Get Started.url</td>
+                            <td class="info_file">15.05.2019</td>
+
+                        </tr>
+                        <tr>
+                            <td class="file">Get Started.url</td>
+                            <td class="info_file">19.05.2019</td>
+
+                        </tr>
+                        <tr>
+                            <td class="file">Get Started.url</td>
+                            <td class="info_file">11.05.2019</td>
+
+                        </tr>
+                        <tr>
+                            <td class="file">Get Started.url</td>
+                            <td class="info_file">12.05.2019</td>
+
+                        </tr>
+                        <tr>
+                            <td class="file">Get Started.url</td>
+                            <td class="info_file">24.05.2019</td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="create_panel">
+                <ul class="add_panel_files">
+                    <li>
+                        <span>Начиная с</span>
+                        <input name="del_inp" class="del_input" list="del_input1" />
+                        <datalist id="del_input1">
+                            <option value="Сегодня" />
+                            <option value="Вчера" />
+                            <option value="Неделю назад" />
+                            <option value="Месяц назад" />
+                            <option value="Выбрать дату" />
+                        </datalist>
+                    </li>
+                    <li>
+                        <span>Вплоть до</span>
+                        <input name="del_inp" class="del_input" list="del_input2" />
+                        <datalist id="del_input2">
+                            <option value="Сегодня" />
+                            <option value="Вчера" />
+                            <option value="Неделю назад" />
+                            <option value="Месяц назад" />
+                            <option value="Выбрать дату" />
+                        </datalist>
+                    </li>
+                    <li>
+                        <span>Удален</span>
+                        <input name="del_inp" class="del_input" placeholder="Эл. адрес или имя" list="del_input3" />
+                        <datalist id="del_input3">
+                        </datalist>
+                    </li>
+                    <li>
+                        <span>В папке</span>
+                        <input name="del_inp" class="del_input" list="del_input4" />
+                        <datalist id="del_input4">
+                            <option value="Выбрать папку" />
+                        </datalist>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
